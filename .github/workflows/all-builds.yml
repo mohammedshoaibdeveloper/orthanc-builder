@@ -16,9 +16,9 @@ jobs:
   pre-build:
     uses: ./.github/workflows/pre-build.yml
 
-  win-stable-build:
+  build-stone-wasm-stable:
     needs: [pre-build]
-    uses: ./.github/workflows/build-win-binaries.yml
+    uses: ./.github/workflows/build-stone-wasm.yml
     with:
       is_tag: ${{ needs.pre-build.outputs.is_tag }}
       stable_unstable: stable
@@ -27,12 +27,12 @@ jobs:
       aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
       aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
-  win-unstable-build:
-    needs: [pre-build]
+  win-stable-build:
+    needs: [pre-build, build-stone-wasm-stable]
     uses: ./.github/workflows/build-win-binaries.yml
     with:
       is_tag: ${{ needs.pre-build.outputs.is_tag }}
-      stable_unstable: unstable
+      stable_unstable: stable
       current_branch_tag: ${{ needs.pre-build.outputs.current_branch_tag }}
     secrets:
       aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
