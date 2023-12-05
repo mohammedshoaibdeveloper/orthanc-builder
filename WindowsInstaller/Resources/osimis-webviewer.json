@@ -1,0 +1,10 @@
+{
+    /**
+     * WebViewer configuration.  Check https://osimis.atlassian.net/wiki/spaces/OKB/pages/10321921/Osimis+Web+Viewer+-+Configuration+file
+     for a description of all options
+     **/
+  
+    "WebViewer" : {
+    }
+}
+  
