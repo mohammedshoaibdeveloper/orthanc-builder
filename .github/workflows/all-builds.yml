@@ -39,7 +39,7 @@ jobs:
       aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
   build-windows-installer:
-    needs: [pre-build, win-stable-build] #, TODO: build win binaries as well build-win-binaries-unstable]
+    needs: [pre-build, win-stable-build]
     uses: ./.github/workflows/build-windows-installer.yml
     with:
       is_tag: ${{ needs.pre-build.outputs.is_tag }}
