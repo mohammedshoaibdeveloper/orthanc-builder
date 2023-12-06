@@ -17,7 +17,7 @@ VersionInfoVersion=${ORTHANC_VERSION}
 
 DisableWelcomePage=no
 SetupIconFile=Resources/NeuroView.ico
-WizardImageFile=Resources/OrthancWizard.bmp
+WizardImageFile=Resources/NeuroViewWizard.bmp
 WizardSmallImageFile=Resources/OrthancWizardLogo.bmp
 WizardImageStretch=no
 

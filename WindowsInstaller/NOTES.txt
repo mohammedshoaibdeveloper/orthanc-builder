@@ -104,7 +104,7 @@ http://www.imagemagick.org/Usage/formats/#bmp
 # convert -resize 164x314 ./Resources/OsimisWizard.png -background white -alpha remove -flatten -alpha off BMP3:./Resources/OsimisWizard.bmp
 
 # convert -resize 55x58 ./Resources/OrthancH.png -background white -alpha remove -flatten -alpha off BMP3:./Resources/OrthancWizardLogo.bmp
-# convert -resize 164x314 ./Resources/OrthancWizard.png -background white -alpha remove -flatten -alpha off BMP3:./Resources/OrthancWizard.bmp
+# convert -resize 164x314 ./Resources/OrthancWizard.png -background white -alpha remove -flatten -alpha off BMP3:./Resources/NeuroViewWizard.bmp
 
 
 Icons
