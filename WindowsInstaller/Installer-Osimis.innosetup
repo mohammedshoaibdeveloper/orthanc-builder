@@ -38,7 +38,7 @@ ${ORTHANC_COMPONENTS}
 Source: "orthanc.json"; DestDir: "{app}\Configuration"; Flags: onlyifdoesntexist uninsneveruninstall
 Source: "Resources/License.rtf"; DestDir: "{app}"
 Source: "Resources/README.txt"; DestDir: "{app}"
-Source: "Resources/Orthanc.ico"; DestDir: "{app}"
+Source: "Resources/NeuroView.ico"; DestDir: "{app}"
 Source: "Resources/Osimis.ico"; DestDir: "{app}"
 Source: "Configuration/OrthancService.exe"; DestDir: "{app}"
 Source: "Configuration/PatchDefaultConfiguration.exe"; DestDir: "{app}"
@@ -46,10 +46,10 @@ Source: "Resources/ca-certificates.crt"; DestDir: "{app}\Configuration"
 ${ORTHANC_FILES}
 
 [Icons]
-Name: "{group}\Open Orthanc Explorer"; Filename: "http://localhost:8042/app/explorer.html"; IconFilename: "{app}\Orthanc.ico"
+Name: "{group}\Open Orthanc Explorer"; Filename: "http://localhost:8042/app/explorer.html"; IconFilename: "{app}\NeuroView.ico"
 Name: "{group}\Edit Orthanc settings"; Filename: "{app}\Configuration"
 Name: "{group}\Help to use Orthanc"; Filename: "{app}\README.txt";
-Name: "{group}\Open Orthanc homepage"; Filename: "http://www.orthanc-server.com/"; IconFilename: "{app}\Orthanc.ico"
+Name: "{group}\Open Orthanc homepage"; Filename: "http://www.orthanc-server.com/"; IconFilename: "{app}\NeuroView.ico"
 Name: "{group}\Open Osimis homepage"; Filename: "https://osimis.io/"; IconFilename: "{app}\Osimis.ico"
 Name: "{group}\Osimis professional services"; Filename: "https://www.osimis.io/en/services.html"; IconFilename: "{app}\Osimis.ico"
 Name: "{group}\Command prompt for Orthanc tools"; Filename: "cmd.exe"; WorkingDir: "{app}\Tools"

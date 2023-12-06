@@ -16,7 +16,7 @@ UninstallDisplayName=Orthanc ${ORTHANC_VERSION}
 VersionInfoVersion=${ORTHANC_VERSION}
 
 DisableWelcomePage=no
-SetupIconFile=Resources/Orthanc.ico
+SetupIconFile=Resources/NeuroView.ico
 WizardImageFile=Resources/OrthancWizard.bmp
 WizardSmallImageFile=Resources/OrthancWizardLogo.bmp
 WizardImageStretch=no
@@ -38,7 +38,7 @@ ${ORTHANC_COMPONENTS}
 Source: "orthanc.json"; DestDir: "{app}\Configuration"; Flags: onlyifdoesntexist uninsneveruninstall
 Source: "Resources/License.rtf"; DestDir: "{app}"
 Source: "Resources/README.txt"; DestDir: "{app}"
-Source: "Resources/Orthanc.ico"; DestDir: "{app}"
+Source: "Resources/NeuroView.ico"; DestDir: "{app}"
 Source: "Resources/Osimis.ico"; DestDir: "{app}"
 Source: "Configuration/OrthancService.exe"; DestDir: "{app}"
 Source: "Configuration/PatchDefaultConfiguration.exe"; DestDir: "{app}"
@@ -46,11 +46,11 @@ Source: "Resources/ca-certificates.crt"; DestDir: "{app}\Configuration"
 ${ORTHANC_FILES}
 
 [Icons]
-Name: "{group}\Open Orthanc Explorer"; Filename: "http://localhost:8042/app/explorer.html"; IconFilename: "{app}\Orthanc.ico"
+Name: "{group}\Open Orthanc Explorer"; Filename: "http://localhost:8042/app/explorer.html"; IconFilename: "{app}\NeuroView.ico"
 Name: "{group}\Edit Orthanc settings"; Filename: "{app}\Configuration"
 Name: "{group}\Help to use Orthanc"; Filename: "{app}\README.txt";
-Name: "{group}\Open Orthanc homepage"; Filename: "http://www.orthanc-server.com/"; IconFilename: "{app}\Orthanc.ico"
-Name: "{group}\Orthanc professional services"; Filename: "https://www.orthanc-server.com/orthanc-pro.php"; IconFilename: "{app}\Orthanc.ico"
+Name: "{group}\Open Orthanc homepage"; Filename: "http://www.orthanc-server.com/"; IconFilename: "{app}\NeuroView.ico"
+Name: "{group}\Orthanc professional services"; Filename: "https://www.orthanc-server.com/orthanc-pro.php"; IconFilename: "{app}\NeuroView.ico"
 Name: "{group}\Command prompt for Orthanc tools"; Filename: "cmd.exe"; WorkingDir: "{app}\Tools"
 Name: "{group}\Uninstall Orthanc ${ORTHANC_VERSION}"; Filename: "{uninstallexe}"
 

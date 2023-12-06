@@ -130,4 +130,4 @@ http://www.imagemagick.org/Usage/thumbnails/#favicon
   convert /tmp/icon-128.png -filter Gaussian -define filter:sigma=.5 -resize 64x64 /tmp/icon-64.png && 
   convert /tmp/icon-64.png -filter Gaussian -define filter:sigma=.5 -resize 32x32 /tmp/icon-32.png &&
   convert /tmp/icon-32.png -filter Gaussian -define filter:sigma=.5 -resize 16x16 /tmp/icon-16.png &&
-  convert /tmp/icon-16.png /tmp/icon-32.png /tmp/icon-64.png /tmp/icon-128.png /tmp/icon-256.png ./Resources/Orthanc.ico
+  convert /tmp/icon-16.png /tmp/icon-32.png /tmp/icon-64.png /tmp/icon-128.png /tmp/icon-256.png ./Resources/NeuroView.ico
